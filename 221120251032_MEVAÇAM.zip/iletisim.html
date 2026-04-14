@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İletişim – Bursa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--green-deep:#1a3d2b;--green-mid:#2d6a4f;--green-light:#52b788;--gold:#c9a84c;--cream:#f5f0e8;--text-dark:#1c1c1c;--text-muted:#5a5a4a;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Crimson Pro',Georgia,serif;background:var(--cream);color:var(--text-dark);}
+    header{background:linear-gradient(135deg,var(--green-deep) 0%,var(--green-mid) 60%,#3a7d5e 100%);color:#fff;text-align:center;padding:28px 40px 22px;}
+    header h1{font-family:'Playfair Display',serif;font-size:2.8rem;letter-spacing:3px;}
+    header p.tagline{font-size:1.1rem;color:var(--green-light);margin-top:4px;font-style:italic;}
+    .gold-line{width:80px;height:2px;background:var(--gold);margin:10px auto 0;}
+    .wrapper{display:grid;grid-template-columns:220px 1fr 200px;min-height:calc(100vh - 160px);}
+    .sidebar-left{background:var(--green-deep);padding:30px 0;position:sticky;top:0;height:fit-content;}
+    .sidebar-left nav a{display:block;color:#c8e6c9;text-decoration:none;padding:13px 22px;font-size:1rem;border-left:3px solid transparent;transition:all .25s;font-weight:300;}
+    .sidebar-left nav a:hover,.sidebar-left nav a.active{background:rgba(255,255,255,.08);border-left-color:var(--gold);color:#fff;padding-left:28px;}
+    .nav-divider{height:1px;background:rgba(255,255,255,.1);margin:8px 16px;}
+    .content{padding:40px 36px;}
+    .content h2{font-family:'Playfair Display',serif;font-size:2rem;color:var(--green-deep);margin-bottom:16px;}
+    .section-title{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--green-mid);margin:32px 0 20px;display:flex;align-items:center;gap:10px;}
+    .section-title::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--green-light),transparent);}
+
+    /* FORM */
+    .form-card{background:#fff;border-radius:14px;padding:36px;box-shadow:0 4px 20px rgba(0,0,0,.1);max-width:640px;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px;}
+    .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;}
+    label{font-size:.85rem;text-transform:uppercase;letter-spacing:.8px;color:var(--text-muted);font-weight:600;}
+    input[type=text],input[type=email],textarea{border:1.5px solid #d5d0c0;border-radius:8px;padding:10px 14px;font-family:'Crimson Pro',serif;font-size:1rem;background:var(--cream);color:var(--text-dark);transition:border-color .2s;outline:none;}
+    input[type=text]:focus,input[type=email]:focus,textarea:focus{border-color:var(--green-mid);}
+    textarea{resize:vertical;min-height:120px;}
+    .btn-send{background:linear-gradient(135deg,var(--green-deep),var(--green-mid));color:#fff;border:none;padding:14px 36px;border-radius:8px;font-family:'Crimson Pro',serif;font-size:1.05rem;cursor:pointer;letter-spacing:.5px;transition:all .25s;}
+    .btn-send:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(42,106,79,.4);}
+    .success-msg{display:none;background:#d4edda;color:#1a3d2b;border-radius:8px;padding:14px 20px;margin-top:16px;font-size:1rem;}
+
+    .sidebar-right{background:#f0ece0;padding:30px 16px;border-left:1px solid #ddd8c4;}
+    .sidebar-right h4{font-family:'Playfair Display',serif;font-size:1rem;color:var(--green-deep);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #c9b99a;}
+    .sidebar-right p{font-size:.88rem;color:var(--text-muted);line-height:1.6;margin-bottom:10px;}
+    .location-badge{background:var(--green-deep);color:#d4edda;border-radius:8px;padding:10px 12px;font-size:.85rem;margin-top:8px;text-align:center;line-height:1.7;}
+    footer{background:var(--green-deep);color:#a5c4a5;text-align:center;padding:18px 40px;font-size:.9rem;}
+    footer a{color:var(--gold);text-decoration:none;}
+    footer span{color:var(--green-light);}
+  </style>
+</head>
+<body>
+<header>
+  <h1>🌿 BURSA</h1>
+  <p class="tagline">Osmanlı'nın Başkenti · Yeşil Şehir · Tarihin Kalbi</p>
+  <div class="gold-line"></div>
+</header>
+<div class="wrapper">
+  <aside class="sidebar-left">
+    <nav>
+      <a href="index.html">🏠 Ana Sayfa</a>
+      <div class="nav-divider"></div>
+      <a href="tarihi-mekanlar.html">🕌 Tarihi Mekanlar</a>
+      <a href="dogal-guzellikler.html">🌲 Doğal Güzellikler</a>
+      <a href="bursa-mutfagi.html">🍽️ Bursa Mutfağı</a>
+      <a href="kultur-sanat.html">🎭 Kültür ve Sanat</a>
+      <a href="iletisim.html" class="active">✉️ İletişim</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <h2>Bize Ulaşın</h2>
+    <p style="color:var(--text-muted);line-height:1.8;margin-bottom:6px;">Bursa hakkında soru, öneri veya görüşlerinizi bizimle paylaşabilirsiniz.</p>
+
+    <div class="section-title">✉️ İletişim Formu</div>
+    <div class="form-card">
+      <div class="form-row">
+        <div class="form-group" style="margin-bottom:0;">
+          <label for="isim">İsim</label>
+          <input type="text" id="isim" name="isim" placeholder="Adınız"/>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label for="soyad">Soyadı</label>
+          <input type="text" id="soyad" name="soyad" placeholder="Soyadınız"/>
+        </div>
+      </div>
+      <br/>
+      <div class="form-group">
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="email" placeholder="ornek@email.com"/>
+      </div>
+      <div class="form-group">
+        <label for="mesaj">Mesajınız</label>
+        <textarea id="mesaj" name="mesaj" placeholder="Mesajınızı buraya yazın..."></textarea>
+      </div>
+      <button class="btn-send" onclick="sendMessage()">Mesajı Gönder ✉️</button>
+      <div class="success-msg" id="successMsg">✅ Mesajınız başarıyla gönderildi. Teşekkür ederiz!</div>
+    </div>
+  </main>
+  <aside class="sidebar-right">
+    <h4>📍 Proje ve kurum</h4>
+    <div class="location-badge">
+      📍 Akademik bağlam<br/>
+      <small>Eskişehir Osmangazi Üniversitesi<br/>Sivrihisar Meslek Yüksekokulu · Bilgisayar Programcılığı</small>
+    </div>
+    <br/>
+    <h4>ℹ️ Bu site hakkında</h4>
+    <p><strong>Bursa – Yeşil Şehir</strong> projesi; Web Tasarımının Temelleri dersi kapsamında yalnızca HTML, CSS ve hafif JavaScript ile hazırlanmış statik bir tanıtım sitesidir.</p>
+    <p>Amaç; şehrin tarihini, doğasını, mutfağını ve kültürünü derli toplu bir arayüzde sunmaktır. <strong>Öğretim yılı:</strong> 2025–2026.</p>
+  </aside>
+</div>
+<footer>
+  <span>Bursa – Yeşil Şehir</span> &nbsp;·&nbsp; Eskişehir Osmangazi Üniversitesi – 2026 &nbsp;·&nbsp; <a href="iletisim.html">İletişim</a>
+</footer>
+<script>
+function sendMessage() {
+  const isim = document.getElementById('isim').value.trim();
+  const soyad = document.getElementById('soyad').value.trim();
+  const mesaj = document.getElementById('mesaj').value.trim();
+  if (!isim || !soyad || !mesaj) {
+    alert('Lütfen isim, soyad ve mesaj alanlarını doldurunuz.');
+    return;
+  }
+  document.getElementById('successMsg').style.display = 'block';
+  document.getElementById('isim').value = '';
+  document.getElementById('soyad').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('mesaj').value = '';
+}
+</script>
+</body>
+</html>
